@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Basics</title>
+        <meta name="description" content="Page organization via CSS">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- CONTAINER CLASS BEGINS -->
+        <div class="container">
+            <!-- CONTENT CLASS BEGINS (THE ENTIRE SITE)-->
+            <div class="function">
+                <div class="click">    
+                    <div id="clicktarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.click</h1>
+                        <p>Click the button to call an alert</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="function">
+                <div class="hide">    
+                    <div id="hidetarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.click</h1>
+                        <p id="hidetexttarget">Click the button to hide this text</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="function">
+                <div class="hide">    
+                    <div id="hidetarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.click</h1>
+                        <p id="hidetexttarget">Click the button to hide this text</p>
+                    </div>
+                </div>
+                <hr>
+            </div>  
+
+        </div>
+        <script>
+            // DISPLAYS ALERT ON CLICK
+            $( "#clicktarget" ).click(function() {
+                alert( "Handler for .click() called." );
+            });
+            // HIDES TEXT ON CLICK
+            $( "#hidetarget" ).click(function() {
+                $("#hidetexttarget").hide();
+            });
+
+        </script>    
+    </body>
+</html>
