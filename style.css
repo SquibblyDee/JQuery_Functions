@@ -8,7 +8,7 @@
 .container{
     background-color: #d0d5da;
     width: 970px;
-    height: 500px;
+    height: 1000px;
 }
 
 #other{
@@ -20,12 +20,45 @@
 
 #clicktarget {
     display: inline-block;
-    margin: 45px 80px 20px 0px;
+    margin: 45px 80px 20px 20px;
     box-shadow: 2px 2px black;
 }
 
 #hidetarget {
     display: inline-block;
-    margin: 45px 80px 20px 0px;
+    margin: 45px 80px 20px 20px;
     box-shadow: 2px 2px black;
+}
+
+#showtarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#toggletarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#slidedowntarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+    margin-bottom: 120px;
+}
+
+#slideuptarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+    margin-bottom: 120px;
+}
+
+#slidetoggletarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+    margin-bottom: 120px;
 }

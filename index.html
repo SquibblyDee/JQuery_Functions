@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Javascript Basics</title>
-        <meta name="description" content="Page organization via CSS">
+        <title>JQuery Functions</title>
+        <meta name="description" content="Exploration of common JQuery functions">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -10,6 +10,7 @@
         <!-- CONTAINER CLASS BEGINS -->
         <div class="container">
             <!-- CONTENT CLASS BEGINS (THE ENTIRE SITE)-->
+            <!-- .CLICK -->
             <div class="function">
                 <div class="click">    
                     <div id="clicktarget">
@@ -22,32 +23,85 @@
                 </div>
                 <hr>
             </div>
-
+            <!-- .HIDE -->
             <div class="function">
                 <div class="hide">    
                     <div id="hidetarget">
                         <button type="button">.click</button>  
                     </div>
                     <div id="other">
-                        <h1>.click</h1>
+                        <h1>.hide</h1>
                         <p id="hidetexttarget">Click the button to hide this text</p>
                     </div>
                 </div>
                 <hr>
             </div>
-
+            <!-- .SHOW -->
             <div class="function">
-                <div class="hide">    
-                    <div id="hidetarget">
+                <div class="show">    
+                    <div id="showtarget">
                         <button type="button">.click</button>  
                     </div>
                     <div id="other">
-                        <h1>.click</h1>
-                        <p id="hidetexttarget">Click the button to hide this text</p>
+                        <h1>.show</h1>
+                        <p id="showtexttarget">You sure showed me</p>
                     </div>
                 </div>
                 <hr>
             </div>  
+            <!-- .TOGGLE -->
+            <div class="function">
+                <div class="toggle">    
+                    <div id="toggletarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.toggle</h1>
+                        <p id="toggletexttarget1">Toggled me on</p>
+                        <p id="toggletexttarget2">Toggled me off</p>
+                    </div>
+                </div>
+                <hr>
+            </div>  
+            <!-- .SLIDEDOWN-->
+            <div class="function">
+                <div class="slidedown">    
+                    <div id="slidedowntarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.slideDown</h1>
+                        <img id="picture1" src="img/picture.png" alt="" width="100" height="123">
+                    </div>  
+                </div>
+                <hr>
+            </div> 
+            <!-- .SLIDEUP -->
+            <div class="function">
+                <div class="slideup">    
+                    <div id="slideuptarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.slideUp</h1>
+                        <img id="picture2" src="img/picture.png" alt="" width="100" height="123">
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .SLIDETOGGLE -->
+            <div class="function">
+                <div class="slidetoggle">    
+                    <div id="slidetoggletarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.slideToggle</h1>
+                        <img id="picture3" src="img/picture.png" alt="" width="100" height="123">
+                    </div>  
+                </div>
+                <hr>
+            </div>
 
         </div>
         <script>
@@ -58,6 +112,38 @@
             // HIDES TEXT ON CLICK
             $( "#hidetarget" ).click(function() {
                 $("#hidetexttarget").hide();
+            });
+            // HIDES ON LOAD THEN SHOWS SOMETHING ON CLICK
+            $(document).ready(function(){
+                $("#showtexttarget").hide();
+            });
+            $( "#showtarget" ).click(function() {
+                $("#showtexttarget").show();
+            });
+            // HIDES 1 STRING ON LOAD THEN TOGGLES BETWEEN THE TWO
+            $(document).ready(function(){
+                $("#toggletexttarget2").hide();
+            });
+            $( "#toggletarget" ).click(function() {
+                $("#toggletexttarget1").toggle();
+            });
+            $( "#toggletarget" ).click(function() {
+                $("#toggletexttarget2").toggle();
+            });
+            // SLIDEDOWN A PICTURE
+            $(document).ready(function(){
+                $("#picture1").hide();
+            });
+            $( "#slidedowntarget" ).click(function() {
+                $( "#picture" ).slideDown();
+            });
+            // SLIDEUP A PICTURE
+            $( "#slideuptarget" ).click(function() {
+                $( "#picture2" ).slideUp();
+            });
+            // SLIDETOGGLE A PICTURE
+            $( "#slidetoggletarget" ).click(function() {
+                $( "#picture3" ).slideToggle();
             });
 
         </script>    
