@@ -8,7 +8,15 @@
 .container{
     background-color: #d0d5da;
     width: 970px;
-    height: 1000px;
+    height: 2500px;
+}
+
+h1{
+    margin-left: 100px;
+}
+
+p{
+    margin-left: 50px;
 }
 
 #other{
@@ -61,4 +69,74 @@
     margin: 45px 80px 20px 20px;
     box-shadow: 2px 2px black;
     margin-bottom: 120px;
+}
+
+#fadeintarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+    margin-bottom: 120px;
+}
+
+#fadeouttarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+    margin-bottom: 120px;
+}
+
+#addclasstarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+}
+
+.selected {
+    color: red;
+}
+
+.highlight {
+    background: yellow;
+}
+
+#beforetarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#aftertarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#appendtarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#htmltarget{
+    display: inline-block;
+    margin: 45px 80px 20px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#attrtarget{ /*NO WORK */
+    display: inline-block;
+    margin: 45px 80px 30px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#valtarget{
+    display: inline-block;
+    margin: 45px 80px 30px 20px;
+    box-shadow: 2px 2px black;
+}
+
+#texttarget{
+    display: inline-block;
+    margin: 45px 80px 30px 20px;
+    box-shadow: 2px 2px black;
 }

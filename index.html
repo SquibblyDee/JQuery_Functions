@@ -102,6 +102,143 @@
                 </div>
                 <hr>
             </div>
+            <!-- .FADEIN -->
+            <div class="function">
+                <div class="fadein">    
+                    <div id="fadeintarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.fadeIn</h1>
+                        <img id="picture4" src="img/picture.png" alt="" width="100" height="123">
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .FADEIN -->
+            <div class="function">
+                <div class="fadeout">    
+                    <div id="fadeouttarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.fadeOut</h1>
+                        <img id="picture5" src="img/picture.png" alt="" width="100" height="123">
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .ADDCLASS -->
+            <div class="function">
+                <div class="addclass">    
+                    <div id="addclasstarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.addClass</h1>
+                        <p id="addclasstexttarget">Click the button to apply the properties of other classes to me</p>
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .BEFORE -->
+            <div class="function">
+                <div class="before">    
+                    <div id="beforetarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.before</h1>
+                        <p id="beforetexttarget">Click the button to stick something before me</p>
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .AFTER -->
+            <div class="function">
+                <div class="after">    
+                    <div id="aftertarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.after</h1>
+                        <p id="aftertexttarget">Click the button to stick something before me</p>
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .APPEND -->
+            <div class="function">
+                <div class="append">    
+                    <div id="appendtarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.append</h1>
+                        <p id="appendtexttarget">Click the button to append something to me.</p>
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .HTML -->
+            <div class="function">
+                <div class="html">    
+                    <div id="htmltarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.html</h1>
+                        <p id="htmltargettext">Click the button to manipulate my html.</p>
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .ATTR-->
+            <div class="function">
+                <div class="attr">    
+                    <div id="attrtarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.attr</h1>
+                        <p>Click the button to edit the images attributes</p>
+                        <img id="picture6" src="img/picture.png" alt="" width="100" height="123">
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .VAL-->
+            <div class="function">
+                <div class="val">    
+                    <div id="valtarget">
+                        <button type="button">.click</button>  
+                    </div>
+                    <div id="other">
+                        <h1>.val</h1>
+                        <p>Click the button to add text to the input box</p>
+                        <p></p>
+                        <form>
+                            <input id="valinputtext" type="text" name="firstname"><br>
+                        </form>
+                    </div>  
+                </div>
+                <hr>
+            </div>
+            <!-- .TEXT-->
+            <div class="function">
+                    <div class="text">    
+                        <div id="texttarget">
+                            <button type="button">.click</button>  
+                        </div>
+                        <div id="other">
+                            <h1>.val</h1>
+                            <p>Click the button to swap the text of both these elements by the p tag</p>
+                            <p>Click the button to swap the text of both these elements by the p tag</p>
+                        </div>  
+                    </div>
+                    <hr>
+                </div>
+            
 
         </div>
         <script>
@@ -135,7 +272,7 @@
                 $("#picture1").hide();
             });
             $( "#slidedowntarget" ).click(function() {
-                $( "#picture" ).slideDown();
+                $( "#picture1" ).slideDown();
             });
             // SLIDEUP A PICTURE
             $( "#slideuptarget" ).click(function() {
@@ -145,7 +282,50 @@
             $( "#slidetoggletarget" ).click(function() {
                 $( "#picture3" ).slideToggle();
             });
-
+            // FADEIN A PICTURE
+            $(document).ready(function(){
+                $("#picture4").hide();
+            });
+            $( "#fadeintarget" ).click(function() {
+                $( "#picture4" ).fadeIn();
+            });
+            // FADEOUT A PICTURE
+            $( "#fadeouttarget" ).click(function() {
+                $( "#picture5" ).fadeOut();
+            });
+            // ADDCLASS 
+            $( "#addclasstarget" ).click(function() {
+                $( "#addclasstexttarget" ).addClass("selected highlight");
+            });
+            // BEFORE 
+            $( "#beforetarget" ).click(function() {
+                $( "#beforetexttarget" ).before("<b>I GO FIRST!</b>");
+            });
+            // AFTER 
+            $( "#aftertarget" ).click(function() {
+                $( "#aftertexttarget" ).after("<b>I GO LAST!</b>");
+            });
+            // APPEND 
+            $( "#appendtarget" ).click(function() {
+                $( "#appendtexttarget" ).append("<b>I'VE BEEN APPENDED!");
+            });
+            // HTML 
+            $( "#htmltarget" ).click(function() {
+                $( "#htmltargettext" ).html("<b>WOW!</b>");
+            });
+            // ATTR
+            $( "#attrtarget" ).click(function() {
+                $( "#picture6" ).attr("width","500");
+            });
+            // VAL 
+            $( "#valtarget" ).click(function() {
+                $( "input:text" ).val("humphrey bogart");
+            });
+            // TEXT
+            $( "#texttarget" ).click(function() {
+                $( ".text p" ).text("humphrey bogart");
+            });
+            
         </script>    
     </body>
 </html>
