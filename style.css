@@ -12,11 +12,13 @@
 }
 
 h1{
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p{
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #other{
